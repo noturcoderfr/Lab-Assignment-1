@@ -26,22 +26,22 @@
 
 public class Lab1_Task15 {
 
-	public static double first_year(double iniBalance, double intYear) {  // First static method.
-		double balance1 = iniBalance + (iniBalance * intYear);  // Calculates the balance after interest of the first year.
+	public static double first_year(double inBalance, double ipYear) {  // First static method.
+		double balance1 = inBalance + (inBalance * ipYear);  // Calculates the balance after interest of the first year.
 		System.out.println("First year: $" + balance1);
 		return balance1;  // Return balance1 to be used in second year method.
 		
 	}
 
-	public static double second_year(double balance1, double intYear) {  // Second static method.
-		double balance2 = balance1 + (balance1 * intYear);  // Calculates the balance after interest of the second year.
+	public static double second_year(double balance1, double ipYear) {  // Second static method.
+		double balance2 = balance1 + (balance1 * ipYear);  // Calculates the balance after interest of the second year.
 		System.out.println("Second year: $" + balance2);
 		return balance2;  // Return balance2 to be used in third year method.
 		
 	}
 
-	public static double third_year(double balance2, double intYear) {  // Third static method.
-		double balance3 = balance2 + (balance2 * intYear);  // Calculates the balance after interest of the third year.
+	public static double third_year(double balance2, double ipYear) {  // Third static method.
+		double balance3 = balance2 + (balance2 * ipYear);  // Calculates the balance after interest of the third year.
 		System.out.println("Third year: $" + balance3);
 		return balance3;  // Return balance3.
 		
@@ -49,12 +49,12 @@ public class Lab1_Task15 {
 
 	public static void main(String[] args) {
 		
-		double iniBalance = 1000;
-		double intYear = (double) 5/100;
+		double inBalance = 1000;
+		double ipYear = (double) 5/100;
 
-		double balance1 = first_year(iniBalance, intYear);  // Store the returned value
-		double balance2 = second_year(balance1, intYear);  // Store the returned value
-		double balance3 = third_year(balance2, intYear);  // Store the returned value
+		double balance1 = first_year(inBalance, ipYear);  // Store the returned value
+		double balance2 = second_year(balance1, ipYear);  // Store the returned value
+		double balance3 = third_year(balance2, ipYear);  // Store the returned value
 		
 	}
 	
