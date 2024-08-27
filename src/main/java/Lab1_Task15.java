@@ -50,7 +50,7 @@ public class Lab1_Task15 {
 	public static void main(String[] args) {
 		
 		double inBalance = 1000;
-		double ipYear = (double) 5/100;
+		double ipYear = 5/100d;
 
 		double balance1 = first_year(inBalance, ipYear);  // Store the returned value
 		double balance2 = second_year(balance1, ipYear);  // Store the returned value
